@@ -1,33 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css/style.css" />
-    <title>What to watch next?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <h1>Tonight's movie selection:</h1>
-    <div class="main-container">
-      <ul class="list-container">
-        <li class="elem1 items">Friends</li>
-        <li class="elem2 items">O Brother, Where Art Thou?</li>
-        <li class="elem3 items">Tais-toi!</li>
-        <li class="elem4 items">How to Steal a Million</li>
-        <li class="elem5 items">Woman in Gold</li>
-      </ul>
-      <div class="description-box">
-        <div class="poster"></div>
-        <div class="description">
-          <p class="movieOne">
-            Follows the personal and professional lives of six twenty to
-            thirty-something-year-old friends living in Manhattan...
-          </p>
-        </div>
-      </div>
+    <h2>Film selection</h2>
+    <p class="action">Choose your movie and see the details on your right</p>
+
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openFilm(event, 'movie1')"
+        id="defaultOpen"
+      >
+        Jerry Maguire
+      </button>
+      <button class="tablinks" onclick="openFilm(event, 'movie2')">
+        Gladiator
+      </button>
+      <button class="tablinks" onclick="openFilm(event, 'movie2')">
+        Cast Away
+      </button>
+      <button class="tablinks" onclick="openFilm(event, 'movie3')">
+        Face Off
+      </button>
+      <button class="tablinks" onclick="openFilm(event, 'movie5')">
+        The Green Mile
+      </button>
     </div>
-    <script src="./scripts/index.js"></script>
+
+    <div id="movie1" class="tabcontent">
+      <h3>Jerry Maguire</h3>
+      <p>
+        Jerry Maguire (Tom Cruise) is a glossy 35-year-old sports agent working
+        for Sports Management International (SMI). After experiencing a
+        life-altering epiphany about his role as a sports agent, he writes a
+        mission statement about perceived dishonesty in the sports management
+        business and his desire to work with fewer clients to produce a better
+        personal relationship with them.
+      </p>
+    </div>
+
+    <div id="movie2" class="tabcontent">
+      <h3>Gladiator</h3>
+      <p>
+        In AD 180, Hispano-Roman General Maximus Decimus Meridius intends to
+        return to his home after he leads the Roman army to victory against the
+        Germanic tribes near Vindobona on the Limes Germanicus. Emperor Marcus
+        Aurelius tells Maximus that his own son, Commodus, is unfit to rule, and
+        that he wishes Maximus to succeed him, as regent, to restore the Roman
+        Republic. Commodus, upon hearing this, murders his father.
+      </p>
+    </div>
+
+    <div id="movie3" class="tabcontent">
+      <h3>Cast away</h3>
+      <p>
+        In 1995, Chuck Noland is a time-obsessed systems analyst, who travels
+        the world resolving productivity problems at FedEx depots. He is in a
+        long-term relationship with Kelly Frears, with whom he lives in Memphis,
+        Tennessee. Although the couple wants to get married, Chuck's busy
+        schedule interferes with their relationship.
+      </p>
+    </div>
+
+    <div id="movie4" class="tabcontent">
+      <h3>Face off</h3>
+      <p>
+        FBI Special Agent Sean Archer survives an assassination attempt by
+        freelance terrorist and homicidal sociopath Castor Troy, but the bullet
+        penetrates Archer's chest and strikes his son Michael, killing the boy.
+      </p>
+    </div>
+
+    <div id="movie5" class="tabcontent">
+      <h3>The green Mile</h3>
+      <p>
+        In a Louisiana assisted-living home in 1999, Paul Edgecomb begins to cry
+        while watching the film Top Hat. His companion Elaine becomes concerned,
+        and Paul explains to her that the film reminded him of the events of
+        1935, which took place when he was a prison officer, in charge of death
+        row, what they refer to as the "Green Mile".
+      </p>
+    </div>
   </body>
+  <script src="./scripts/index.js"></script>
 </html>
 
 <!-- <!DOCTYPE html>

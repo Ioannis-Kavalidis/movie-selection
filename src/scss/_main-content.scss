@@ -1,75 +1,85 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
   box-sizing: border-box;
 }
+
 body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #263f44;
-  cursor: default;
-}
-.main-container {
-  width: 57vw;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.list-container {
-  width: 20vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.items {
-  flex: 1;
-  list-style: none;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.description-box {
-  width: 40vw;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.poster {
-  width: 20vw;
-  height: 50vh;
-  background-image: url();
+  font-family: "Lato", sans-serif;
+  padding: 0 5%;
+  line-height: 1.4;
+  margin-top: 10rem;
+  background-color: rgba(66, 59, 59, 0.226);
+  background-image: url("https://images.unsplash.com/photo-1543536448-1e76fc2795bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1324&q=80");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.description {
-  width: 40vw;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-}
-.description p {
-  width: 30vw;
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.hideDescription {
-  opacity: 0;
-}
-.displayDescription {
+
+h2,
+.action {
+  background-color: rgba(252, 244, 244, 0.226);
   opacity: 1;
+  width: 40rem;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+}
+
+.action {
+  font-style: oblique;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  color: blue;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  width: 20%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(38, 195, 216);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(104, 197, 95);
+}
+
+.tab button {
+  background-color: rgb(232, 250, 250);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-left: 40em;
+  padding: 0px 12px;
+  width: 60%;
+  height: 200px;
 }
 
 // *,
