@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgba(66, 59, 59, 0.226);
+  padding: 0 5%;
+  line-height: 1.4;
+  margin-top: 2rem;
+  background-image: url("https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
